@@ -67,7 +67,8 @@ app.use(bodyParser.json());
  */
 
 var router = {
-  index: require('./routes/index')
+  index: require('./routes/index'),
+  update: require('./routes/update')
 };
 
 
@@ -76,6 +77,8 @@ var router = {
  */
 
 app.get('/', router.index.view);
+
+app.get('/myTest', router.update.view);
 
 app.use(function(req, res) {
   res.status(404);
