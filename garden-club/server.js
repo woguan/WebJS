@@ -104,11 +104,7 @@ app.use(function(req, res) {
 // Autonousmly update from GitHub
 //app.use (express.bodyParser());
 
-app.post('/autonomouslyUpdate', function(req, res){
-console.log("requested some action");
-res.redirect('/myTest');
-
-});
+app.post('/autonomouslyUpdate', router.update.view);
 
 /**
  * Create Server and Listen
