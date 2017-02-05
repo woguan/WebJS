@@ -78,7 +78,9 @@ var router = {
 
 app.get('/', router.index.view);
 
-app.get('/autonomouslyUpdate', router.update.view);
+app.get('/myTest', router.update.view);
+
+// Automatic update
 
 app.use(function(req, res) {
   res.status(404);
@@ -99,6 +101,14 @@ app.use(function(req, res) {
   res.type('txt').send('Not found');
 });
 
+// Autonousmly update from GitHub
+app.use (express.bodyParser());
+
+app.post('/autonomouslyUpdate', function(req, res){
+console.log("requested some action");
+res.redirect('/myTest');
+
+});
 
 /**
  * Create Server and Listen
