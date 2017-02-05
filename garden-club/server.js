@@ -102,7 +102,7 @@ app.use(function(req, res) {
 });
 
 // Autonousmly update from GitHub
-app.use (express.bodyParser());
+//app.use (express.bodyParser());
 
 app.post('/autonomouslyUpdate', function(req, res){
 console.log("requested some action");
