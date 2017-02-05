@@ -1,0 +1,21 @@
+{
+  "name": "grunt-config",
+  "version": "1.0.0",
+  "description": "Grunt config for Node.js Boilerplate",
+  "author": "David Luu",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-sass": "*",
+    "grunt-combine-media-queries": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-imagemin": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-modernizr": "*",
+    "grunt-contrib-watch": "*"
+  }
+}

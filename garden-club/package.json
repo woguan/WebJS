@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-boilerplate",
+  "version": "0.0.1",
+  "description": "Extension of the HTML 5 Boilerplate (https://html5boilerplate.com/) with a Node.js/Express server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "grunt watch & nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcluu/nodejs-boilerplate.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Node",
+    "Boilerplate"
+  ],
+  "author": "David Luu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidcluu/nodejs-boilerplate/issues"
+  },
+  "homepage": "https://github.com/davidcluu/nodejs-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "6.7.0",
+    "npm": "3.10.3"
+  }
+}
