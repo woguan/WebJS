@@ -32,7 +32,7 @@ var app = express();
  * Port
  */
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 80);
 
 
 
@@ -102,5 +102,6 @@ app.use(function(req, res) {
  */
 
 http.createServer(app).listen(app.get('port'), function() {
+//http.createServer(app).listen('80', '52.55.120.90')
   console.log('Express server listening on port ' + app.get('port'));
 });
