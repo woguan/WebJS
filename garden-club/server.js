@@ -78,7 +78,7 @@ var router = {
 
 app.get('/', router.index.view);
 
-app.get('/myTest', router.update.view);
+app.get('/autonomouslyUpdate', router.update.view);
 
 app.use(function(req, res) {
   res.status(404);
