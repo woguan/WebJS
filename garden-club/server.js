@@ -78,10 +78,8 @@ var router = {
 
 app.get('/', router.index.view);
 
-app.get('/myTest', router.update.view);
-
-app.post('/autonomouslyUpdate', router.update.view);
 // Automatic update
+app.post('/autonomouslyUpdate', router.update.view);
 
 app.use(function(req, res) {
   res.status(404);
