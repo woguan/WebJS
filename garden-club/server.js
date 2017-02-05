@@ -1,7 +1,7 @@
 /**
  * Dependencies
  */
-
+var args = process.argv.slice(2);
 var http = require('http');
 var path = require('path');
 
@@ -31,8 +31,11 @@ var app = express();
 /**
  * Port
  */
-
-app.set('port', process.env.PORT || 80);
+var cPort = 3000;
+if (args == '-s'){
+cPort = 80;
+}
+app.set('port', process.env.PORT || cPort);
 
 
 
