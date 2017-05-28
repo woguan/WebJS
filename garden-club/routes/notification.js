@@ -3,15 +3,15 @@ var apn = require('apn');
 // Set up apn with the APNs Auth Key
 var apnProvider = new apn.Provider({  
      token: {
-        key: 'apns.p8', // Path to the key p8 file
-        keyId: 'ABCDE12345', // The Key ID of the p8 file (available at https://developer.apple.com/account/ios/certificate/key)
-        teamId: 'ABCDE12345', // The Team ID of your Apple Developer Account (available at https://developer.apple.com/account/#/membership/)
+        key: 'APNsAuthKey_3Z978D4FP2.p8', // Path to the key p8 file
+        keyId: '3Z978D4FP2', // The Key ID of the p8 file (available at https://developer.apple.com/account/ios/certificate/key)
+        teamId: '96342UP57T', // The Team ID of your Apple Developer Account (available at https://developer.apple.com/account/#/membership/)
     },
     production: false // Set to true if sending a notification to a production iOS app
 });
 
 // Enter the device token from the Xcode console
-var deviceToken = '5311839E985FA01B56E7AD74444C0157F7F71A2745D0FB50DED665E0E882';
+var deviceToken = 'F58EA07D649EC0C964736EA4CBEAC91A27AB4DE5DF2B421D2CDE4AC5F90FB488';
 
 // Prepare a new notification
 var notification = new apn.Notification();
