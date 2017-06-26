@@ -1,3 +1,4 @@
 exports.view = function(req, res) {
-  res.render('index');
+  res.redirect('http://dwg.weebly.com')
+  //res.render('index');
 };
