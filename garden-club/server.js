@@ -71,7 +71,8 @@ app.use(bodyParser.json());
 
 var router = {
   index: require('./routes/index'),
-  update: require('./routes/update')
+  update: require('./routes/update'),
+  send: require('./routes/test2')
 };
 
 
@@ -80,9 +81,10 @@ var router = {
  */
 
 app.get('/', router.index.view);
-
+app.get('/send', router.send.view);
 // Automatic update
 app.post('/autonomouslyUpdate', router.update.view);
+//app.post('/send', router.send.view);
 
 app.use(function(req, res) {
   res.status(404);

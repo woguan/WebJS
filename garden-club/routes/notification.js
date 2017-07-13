@@ -17,7 +17,7 @@ var deviceToken = 'F58EA07D649EC0C964736EA4CBEAC91A27AB4DE5DF2B421D2CDE4AC5F90FB
 var notification = new apn.Notification();
 
 // Specify your iOS app's Bundle ID (accessible within the project editor)
-notification.topic = 'my.bundle.id';
+notification.topic = 'DWG.findIphone';
 
 // Set expiration to 1 hour from now (in case device is offline)
 notification.expiry = Math.floor(Date.now() / 1000) + 3600;
@@ -35,7 +35,7 @@ notification.alert = 'Hello World \u270C';
 notification.payload = {id: 123};
 
 // Actually send the notification
-apnProvider.send(notification, deviceToken).then(function(result) {  
+//apnProvider.send(notification, deviceToken).then(function(result) {  
     // Check the result for any failed devices
-    console.log(result);
-});
+//    console.log(result);
+//});
