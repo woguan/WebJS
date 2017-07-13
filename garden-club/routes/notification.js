@@ -11,7 +11,7 @@ var apnProvider = new apn.Provider({
 });
 
 // Enter the device token from the Xcode console
-var deviceToken = '0DEC03589BBD64A03A69DEACC5ACF84A74650F85C6BD32AB00AA4EF1226297F9';
+var deviceToken = '05373088FC0D186DAC1D87C907D721D9A742900C12004ABAA19EEF5ACEC98095';
 
 // Prepare a new notification
 var notification = new apn.Notification();
